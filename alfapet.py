@@ -1,6 +1,6 @@
-import pandas as pd
+tiedosto = open('kotus_sanat.txt', 'r')
 
-sanat = pd.read_csv('kotus_sanat.txt', header=None, squeeze=True, engine='python')
+sanat = [rivi for rivi in tiedosto.readlines()]
 
 kirjainpisteet = {}
 def pisteytys(kirjaimet, pisteet):
