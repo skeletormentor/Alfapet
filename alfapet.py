@@ -1,4 +1,4 @@
-tiedosto = open('kotus_sanat.txt', 'r', encoding='utf8')
+tiedosto = open('kotus_sanat.txt', 'r')
 sanat = [rivi.rstrip() for rivi in tiedosto.readlines()]
 
 kirjainpisteet = {}
